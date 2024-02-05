@@ -1,7 +1,7 @@
-# ---
-# Welcome to LYDDE Group Jekyll Theme!
+#
+# Welcome to LYDDE Group Website system
 # Version : 1.0.0
-# ---
+#
 # This site is a bootstrap 5.3 theme for Jekyll engine
 # This config file is meant for settings that affect your whole site, values
 # which you are expected to set up once and rarely edit after that.
@@ -12,19 +12,32 @@
 #
 
 #
-# Build settings
+# Theme Usage
 #
+# Theme can be used from Gem Package or from GitHub
+# Default and recommanded usage is to rely on GitHub, to get latest version, even unpublished
+# If you rely on GEM, uncomment theme and comment remote_theme
 #theme: jekyll-theme-lydde
 remote_theme: lydde/jekyll-lydde-theme
 
-#
-# Site
-#
+# 
+# Site settings
+# 
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 #
 title: YAKA Playground
+tagline: Discover the thrill of playing with YAKA Games!
 description: "Our Playground is the ultimate destination for all the amazing games created or distributed by YAKA Games and our talented studios."
+
+#
+# Authors
+#
+authors:
+  default:
+    name: YAKA Games
+    email: contact@yaka.games
+    site: https://yaka.games
 
 #
 # Brand
@@ -34,7 +47,6 @@ description: "Our Playground is the ultimate destination for all the amazing gam
 #
 logo: "/assets/logo.png"
 favicon: "assets/icons/favicon.ico"
-tagline: Discover the thrill of playing with YAKA Games!
 
 #
 # Localization
@@ -58,7 +70,9 @@ permalink: /news/:categories/:title # the subpath of your posts, e.g. /news
 collections:
   categories:
     output: false
-    
+  pages:
+    output: true
+
 #
 # Defaults values
 #
