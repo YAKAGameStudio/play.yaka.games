@@ -1,0 +1,162 @@
+#
+# Welcome to LYDDE Group Website system
+# Version : 1.0.0
+#
+# This site is a bootstrap 5.3 theme for Jekyll engine
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that.
+# Others settings are in /_settings/
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+
+#
+# Theme Usage
+#
+# Theme can be used from Gem Package or from GitHub
+# Default and recommanded usage is to rely on GitHub, to get latest version, even unpublished
+# If you rely on GEM, uncomment theme and comment remote_theme
+#theme: jekyll-theme-lydde
+remote_theme: lydde/jekyll-lydde-theme
+
+# 
+# Site settings
+# 
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+#
+title: YAKA Playground
+tagline: Discover the thrill of playing with YAKA Games!
+description: "Our Playground is the ultimate destination for all the amazing games created or distributed by YAKA Games and our talented studios."
+
+#
+# Authors
+#
+authors:
+  default:
+    name: YAKA Games
+    email: contact@yaka.games
+    site: https://yaka.games
+
+#
+# Brand
+#
+# These are used to marketize your brand. If you look in the HTML files,
+# you will see them in the header and the NavMenu.
+#
+logo: "/assets/logo.svg"
+favicon: "assets/icons/favicon.ico"
+
+#
+# Localization
+#
+# These are used to assist search engine and browser exposing the right language to user.
+#
+timezone: Europe/Paris
+language: en
+locale: en_US
+
+#
+# Hosting
+#
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+permalink: /news/:categories/:title # the subpath of your posts, e.g. /news
+
+#
+# Collections
+#
+collections:
+  categories:
+    output: false
+
+#
+# Defaults values
+#
+defaults:
+# all posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      image: /assets/images/post.jpeg
+      author: author-1
+# all categories
+  - scope:
+      path: ""
+      type: categories
+    values:
+      layout: page
+      image: /assets/images/page.jpeg
+# all pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+      image: /assets/images/page.jpeg
+#
+# Theme Settings
+#
+settings:
+# Google Analytics
+  analytics: XXXXX
+  # Social Networks Information
+  social:
+    twitter:
+      name: Twitter
+      username: yakagamestudio
+      link: https://twitter.com/yakagamestudio
+      image: image-twitter.png
+      card: summary
+    facebook:
+      name: Facebook
+      username: yakagamestudio
+      link: https://facebook.com/yakagamestudio
+    instagram:
+      name: Instagram
+      username: yakagamestudio
+      link: https://instagram.com/yakagamestudio
+    twitch:
+      username: yakagamestudio
+      link: https://www.twitch.tv/
+    youtube:
+      link: https://www.youtube.com/channel/UCqhzZEPsQ18xUt0vc1pekCw
+  webmaster:
+    verification:
+      google: XXX
+      bing: XXX
+      alexa: XXX
+      yandex: XXX
+      baidu: XXX
+      facebook: XXX
+
+#
+# Plugin
+#
+plugins:
+  - jekyll-relative-links
+  - jekyll-github-metadata  #https://github.com/jekyll/github-metadata
+  - jekyll-redirect-from
+  - jekyll-remote-theme     #https://github.com/benbalter/jekyll-remote-theme
+
+relative_links:
+  collections: true
+
+#
+# Files excluded
+#
+exclude:
+  - readme.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
