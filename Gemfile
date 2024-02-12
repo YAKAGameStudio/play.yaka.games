@@ -18,13 +18,8 @@ gem "jekyll-theme-lydde"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed"
-  gem "jekyll-archives"
   gem "jekyll-github-metadata"
   gem "jekyll-remote-theme"
-  gem "jekyll-relative-links"
-  gem "jekyll-mentions"
-  gem "jekyll-redirect-from"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

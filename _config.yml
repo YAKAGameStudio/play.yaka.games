@@ -128,22 +128,13 @@ settings:
     verification:
       google: XXX
       bing: XXX
-      alexa: XXX
-      yandex: XXX
-      baidu: XXX
-      facebook: XXX
 
 #
 # Plugin
 #
 plugins:
-  - jekyll-relative-links
   - jekyll-github-metadata  #https://github.com/jekyll/github-metadata
-  - jekyll-redirect-from
   - jekyll-remote-theme     #https://github.com/benbalter/jekyll-remote-theme
-
-relative_links:
-  collections: true
 
 #
 # Files excluded
