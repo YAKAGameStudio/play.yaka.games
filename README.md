@@ -1,4 +1,4 @@
-# YAKA Games Playground
+# YAKA Playground
 
 Welcome to the ultimate destination for gaming enthusiasts! 
 Here you will find all the games that YAKA Games and its amazing studios have created or published for your entertainment. 

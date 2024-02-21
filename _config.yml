@@ -60,7 +60,7 @@ locale: en_US
 #
 # Hosting
 #
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://play.yaka.games/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: /news/:categories/:title # the subpath of your posts, e.g. /news
 
@@ -102,7 +102,7 @@ defaults:
 #
 settings:
 # Google Analytics
-  analytics: XXXXX
+  analytics: G-P1PQSNQ1RF
   # Social Networks Information
   social:
     twitter:
